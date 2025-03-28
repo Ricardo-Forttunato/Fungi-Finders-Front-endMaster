@@ -278,7 +278,7 @@
   }
 
   [aria-controls="primary-nav"] {
-    display: block;
+    display: none;
     @media (width < 760px) {
       display: block;
     }
@@ -296,10 +296,7 @@
     }
 
     @media (width < 760px) {
-      /* Toggle display menu-hamburger */
-      [aria-expanded="false"] ~ & {
-        display: none;
-      }
+      display: none;
 
       position: absolute;
       z-index: 10;
@@ -322,6 +319,13 @@
         padding-block-start: 1.5rem;
         border-top: 2px solid var(--background-accent-light);
       }
+    }
+  }
+
+  /* Toggle display menu-hamburger */
+  @media (width < 760px) {
+    [aria-expanded="true"] ~ .primary-navigation {
+      display: block;
     }
   }
 
