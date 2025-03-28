@@ -17,7 +17,14 @@
       <div class="wrapper" data-width="wide">
         <div class="site-header__inner">
           <img src="/assets/fungi-finders.svg" alt="Fungi Finders" />
-          <nav class="primary-navigation">
+          <button aria-controls="primary-nav" aria-expanded="false">
+            <span class="visually-hidden">Menu</span>
+            <img
+              src="assets/menu-hamburger.png"
+              alt="image with 3 lines simulating a menu-hamburger"
+            />
+          </button>
+          <nav id="primary-nav" class="primary-navigation">
             <ul role="list">
               <li>
                 <a href="/">Discover</a>
@@ -186,4 +193,5 @@
       <a href="mailto:teste@teste.com.br">contact@fungifinders.com</a>
     </footer>
   </body>
+  <script src="./main.js"></script>
 </html>
